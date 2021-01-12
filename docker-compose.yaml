@@ -1,6 +1,8 @@
 version: '3.3'
 services:
   db:
+    restart: always
+    container_name: 4biz_db
     image: mysql:5.6
     ports:
       - "3306:3306"
@@ -9,9 +11,17 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=admin
       - MYSQL_DATABASE=chamados
-  app:
+  phpadmin:
+    restart: always
+    container_name: 4biz_phpadmin
     image: phpmyadmin/phpmyadmin:latest
     ports:
       - 80:80
     environment:
       - PMA_ARBITRARY=1
+  python_selenium :
+    restart: always
+    container_name: 4biz_python_selenium
+    image: python-chrome-chrome_driver-selenium
+    volumes:
+      - ./python_selenium:/python_selenium
