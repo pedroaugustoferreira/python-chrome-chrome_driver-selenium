@@ -20,8 +20,8 @@ services:
     environment:
       - PMA_ARBITRARY=1
   python_selenium :
-    restart: always
+#    restart: always
     container_name: 4biz_python_selenium
     image: python-chrome-chrome_driver-selenium
     volumes:
-      - ./python_selenium:/python_selenium
+      - ./python_selenium:/app
