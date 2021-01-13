@@ -9,6 +9,7 @@ mkdir python_selenium
 chmod 770 data
 chmod 770 python_selenium
 docker-compose -f docker-compose.yaml up -d
+docker exec -i 4biz_db mysql -uroot -padmin chamados < create_table.sql
 
 
 ```
