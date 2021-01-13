@@ -16,4 +16,4 @@ RUN wget https://chromedriver.storage.googleapis.com/87.0.4280.88/chromedriver_l
       cp chromedriver /usr/sbin/
 # Install Selenium and Behave
 RUN pip install selenium configparser
-CMD [ "python", "/app/main.py" ]
+CMD [ "python3", "/app/main.py" ]
