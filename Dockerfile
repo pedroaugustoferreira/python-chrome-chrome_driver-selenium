@@ -16,3 +16,4 @@ RUN wget https://chromedriver.storage.googleapis.com/87.0.4280.88/chromedriver_l
       cp chromedriver /usr/sbin/
 # Install Selenium and Behave
 RUN pip install selenium 
+CMD [ "python", "/app/main.py" ]
