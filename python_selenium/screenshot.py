@@ -20,11 +20,11 @@ driver.get("http://191.252.182.151:3000/d/LQWCv3aMz/chamados")
 
 el = driver.find_element_by_name('user')
 el.clear()
-el.send_keys("unix")
+el.send_keys("XXXXXXXX")
 
 el = driver.find_element_by_name('password')
 el.clear()
-el.send_keys("Service@123")
+el.send_keys("XXXXXXX")
 el.send_keys(Keys.RETURN)
 
 sleep(600)
