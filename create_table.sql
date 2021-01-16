@@ -1,3 +1,4 @@
+ALTER DATABASE chamados CHARACTER SET utf8 COLLATE utf8_general_ci;
 SET GLOBAL time_zone = '-3:00';
 CREATE TABLE torre_unix  ( 
    ID_SOLICITACAO_SERVICO TEXT,
