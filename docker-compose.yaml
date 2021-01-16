@@ -9,6 +9,7 @@ services:
     volumes:
       - ./data:/var/lib/mysql
       - ./python_selenium:/var/lib/mysql-files
+      - ./custom.cnf:/etc/mysql/conf.d/custom.cnf
     environment:
       - MYSQL_ROOT_PASSWORD=admin
       - MYSQL_DATABASE=chamados
