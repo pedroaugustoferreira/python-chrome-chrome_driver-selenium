@@ -1,3 +1,4 @@
+SET GLOBAL time_zone = '-3:00';
 CREATE TABLE torre_unix  ( 
    ID_SOLICITACAO_SERVICO TEXT,
 SERVICO TEXT,
